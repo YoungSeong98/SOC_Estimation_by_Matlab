@@ -2,7 +2,12 @@
 
 
 
-![ECM](https://github.com/YoungSeong98/SOC_Estimatior_Simulation_by_Matlab/assets/79350177/5962aca2-4e58-424d-8e9a-79a9c62f6e4b)
+- This is a project Implementing Simulation Structure to Evaluate SOC Estimator based on Extended Kalman Filter 
+- The Simulation Structure is composed with Matlab, without using any additional Tool Box
+
+
+
+- For more detail, see : https://youngseong.tistory.com/263
 
 
 
