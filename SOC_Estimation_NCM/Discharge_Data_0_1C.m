@@ -1,5 +1,5 @@
-%% This Function Returns Measured Terminal Voltage while discharging 
-%% Each Data`s Time Interval is 1 second (37941 Data)
+% This Function Returns Measured Terminal Voltage while discharging 
+% Each Data`s Time Interval is 1 second (37941 Data)
 
 function Vt = Discharge_Data_0_1C(step)
 

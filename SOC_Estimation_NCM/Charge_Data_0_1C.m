@@ -1,5 +1,5 @@
-%% This Function Returns Measured Terminal Voltage while Charging 
-%% Each Data`s Time Interval is 1 second (35797 Data)
+% This Function Returns Measured Terminal Voltage while Charging 
+% Each Data`s Time Interval is 1 second (35797 Data)
 
 function Vt = Charge_Data_0_1C(step)
 

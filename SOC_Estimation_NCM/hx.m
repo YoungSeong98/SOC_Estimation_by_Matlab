@@ -1,4 +1,4 @@
-%% This code Predicts Vt by Predicted State Variable and OCV-SOC LUT
+% This Function Predicts Vt by Predicted State Variable and OCV-SOC LUT
 
 function z_predict = hx(Cell_Data, SOC, Case)
 

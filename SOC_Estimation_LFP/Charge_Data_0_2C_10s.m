@@ -1,5 +1,5 @@
-%% This Function Returns Measured Terminal Voltage while Charging in Usable Range 
-%% Each Data`s Time Interval is 10 second (1732 Data)
+% This Function Returns Measured Terminal Voltage while Charging in Usable Range 
+% Each Data`s Time Interval is 10 second (1732 Data)
 
 function Vt_CHG = Charge_Data_0_2C_10s(step)
 

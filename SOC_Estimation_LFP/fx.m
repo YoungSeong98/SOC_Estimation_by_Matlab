@@ -1,4 +1,4 @@
-%% This code Predicts Present Step`s State Variables by Non Linear State Equation
+% This Function Predicts Present Step`s State Variables by Non Linear State Equation
 
 function x = fx(xk_before, dt, Exper_Data)
 

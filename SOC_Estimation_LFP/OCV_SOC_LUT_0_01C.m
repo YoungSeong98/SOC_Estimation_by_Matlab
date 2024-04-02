@@ -1,7 +1,6 @@
-% This function stores Cell`s Charge and Discharge OCV and corresponding SOC
+% This Function stores Cell`s Charge and Discharge OCV and corresponding SOC
 % OCV is in the range of usable voltage 
-% This function distinguishes Charge and Discharge to apply corresponding 
-% OCV value
+% This function distinguishes Charge and Discharge to apply corresponding OCV value
 
 function Output = OCV_SOC_LUT_0_01C(Input, Case, Request)
 

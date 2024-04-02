@@ -1,4 +1,4 @@
-%% This function Calculates Linearized Measurement Matrix H
+% This Function Calculates Linearized Measurement Matrix H
 
 function H_k = Hk(SOC_predic, SOC_before, Case)
 

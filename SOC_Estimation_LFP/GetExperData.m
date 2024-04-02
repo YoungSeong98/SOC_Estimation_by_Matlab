@@ -1,4 +1,5 @@
-% This code return Discharge Experiment Data
+% This function returns Experimental Data measured while charging or
+% discharging
 
 function cell = GetExperData(k, Cell_Data, dt, Case)
 

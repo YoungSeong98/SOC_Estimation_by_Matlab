@@ -1,5 +1,5 @@
-%% This Function Returns Measured Terminal Voltage while discharging in Usable Range
-%% Each Data`s Time Interval is 5 seconds (3525 Data)
+% This Function Returns Measured Terminal Voltage while discharging in Usable Range
+% Each Data`s Time Interval is 5 seconds (3525 Data)
 
 function Vt_DHG = Discharge_Data_0_2C_5s(step)
 

@@ -1,5 +1,5 @@
-% This function initialize the simulation
-% Initialize Cell`s Parameter Assuming that SOC is 100%
+% This function initializes the Cell related data, ECM parameters, and
+% initial state variables
 
 function cell = Init_Cell(Case, dt)
 

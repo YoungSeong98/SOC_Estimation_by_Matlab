@@ -1,4 +1,5 @@
-%% Main Part of SOC Estimator by EKF. This Code Estimates SOC in Entire Range
+% Main Part of SOC Estimator by EKF. This Code Estimates SOC in the Usable
+% SOC while Discharging about 100% -> 7% SOC
 
 clear all; close all force;
 % clc;
@@ -97,35 +98,38 @@ Current_RMSE = rmse(Current_Nominal, Current_Noise)
 % plot(t, ActualSOC)
 % legend("Actual SOC")
 
-% subplot(2,2,1)
-% hold on
-% plot(t, ActualSOC, 'g')
-% plot(t, Estimation(:,1), 'r')
-% plot(t, AC_SOC, 'b')
-% legend('Actual SOC','EKF SOC', 'AC SOC')
-% xlim([0 last_time])
-% 
-% subplot(2,2,2)
-% hold on
-% plot(t, EKFVt, 'r')
-% plot(t, Measurement, 'g')
-% legend('Estimated Vt', 'Measured Vt')
-% xlim([0 last_time])
-% 
-% subplot(2,2,3)
-% plot(t, abs(Error_Rate(:,1)), 'r')
-% hold on
-% plot(t, abs(Error_Rate(:,2)), 'b')
-% % plot(t, abs(Error_Rate(:,3)), 'g')
-% % legend('EKF Error Rate', 'AC Error Rate', 'Vt Error Rate')
-% legend('EKF Error Rate', 'AC Error Rate')
-% 
-% subplot(2,2,4)
-% % hold on
-% % plot(t, Estimation(:,2))
-% % legend("V1")
-% % hold off
-% hold on
-% plot(t, Current_Noise, 'b')
-% legend('Discharge Current')
-% hold off
+subplot(2,2,1)
+hold on
+plot(t, ActualSOC, 'g')
+plot(t, Estimation(:,1), 'r')
+plot(t, AC_SOC, 'b')
+legend('Actual SOC','EKF SOC', 'AC SOC')
+xlabel('Time [s]')
+ylabel('SOC [%]')
+xlim([0 last_time])
+
+subplot(2,2,2)
+hold on
+plot(t, EKFVt, 'r')
+plot(t, Measurement, 'g')
+legend('Estimated Vt', 'Measured Vt')
+xlabel('Time [s]')
+ylabel('Voltage [V]')
+xlim([0 last_time])
+
+subplot(2,2,3)
+plot(t, abs(Error_Rate(:,1)), 'r')
+hold on
+plot(t, abs(Error_Rate(:,2)), 'b')
+plot(t, abs(Error_Rate(:,3)), 'g')
+xlabel('Time [s]')
+ylabel('Error Rate [%]')
+legend('EKF Error Rate', 'AC Error Rate', 'Vt Error Rate')
+
+subplot(2,2,4)
+hold on
+plot(t, Current_Noise, 'b')
+xlabel('Time [s]')
+ylabel('Amphere [A]')
+legend('Current')
+hold off

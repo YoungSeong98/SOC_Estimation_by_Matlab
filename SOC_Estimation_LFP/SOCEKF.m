@@ -1,4 +1,5 @@
-%% This Function Receives Measured Vt and Time interval as input
+% This Function Receives Measured Vt and Time interval as input
+% And returns EKF process output
 
 function [SOC_k, V1_k] = SOCEKF(Cell_Data, dt, Case)
 persistent F Q R P H K P_before
