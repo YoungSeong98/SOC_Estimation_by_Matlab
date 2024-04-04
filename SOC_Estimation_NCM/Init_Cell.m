@@ -13,6 +13,7 @@ if Case == "DHG"
     Cn_Nominal = 4.32019;
 
     % Define ECM Parameters
+    % These parameters were acquired by repetitive Discharge experiment
     R0 = 0.001884314;
     R1 = 0.045801322;
     C1 = 4846.080679; 

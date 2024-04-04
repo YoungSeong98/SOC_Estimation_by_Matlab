@@ -12,7 +12,9 @@ if Case == "DHG"
     ik_nominal = 3;
     Cn_Nominal = 14.6533;
     
-    R0 = 0.00837939;                    % Equivalent Circuit Model Parameters
+    % Define ECM Parameters
+    % These parameters were acquired by repetitive Discharge experiment
+    R0 = 0.00837939;                   
     R1 = 0.00037329;
     C1 = 300.42379407;
 
